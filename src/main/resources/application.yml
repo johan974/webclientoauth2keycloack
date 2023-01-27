@@ -10,13 +10,13 @@ spring:
         registration:
           mywebclient:
            client-id: myclient
-           client-secret: Wna8BGXiGIhmnzr7T1UQKb2260ruZhWB
+           client-secret: ad8da2cc-9ee4-4767-83dc-7192f1ed041d
            authorization-grant-type: client_credentials
            
         provider:
           mywebclient:
-            issuer-uri: http://localhost:8080/realms/myrealm
-            token-uri: http://localhost:8080/realms/myrealm/protocol/openid-connect/token
+            issuer-uri: http://localhost:28080/auth/realms/myrealm
+            token-uri: http://localhost:28080/auth/realms/myrealm/protocol/openid-connect/token
             
           
             
