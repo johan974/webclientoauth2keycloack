@@ -12,11 +12,18 @@ spring:
            client-id: myclient
            client-secret: ad8da2cc-9ee4-4767-83dc-7192f1ed041d
            authorization-grant-type: client_credentials
-           
+          businesspartners:
+            client-id: myclient2
+            authorization-grant-type: password
+            client-name: johan
+            client-secret: password
+            provider: businesspartners
         provider:
           mywebclient:
             issuer-uri: http://localhost:28080/auth/realms/myrealm
             token-uri: http://localhost:28080/auth/realms/myrealm/protocol/openid-connect/token
-            
-          
+          businesspartners:
+            issuer-uri: http://localhost:28080/auth/realms/realm2
+            token-uri: http://localhost:28080/auth/realms/realm2/protocol/openid-connect/token
+
             
